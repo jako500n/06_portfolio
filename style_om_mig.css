@@ -136,8 +136,8 @@ Til sidst media-query til desktopversionen.
 
   #ommig_third_section_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-columns: repeat(minmax(2, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -322,8 +322,8 @@ Til sidst media-query til desktopversionen.
 
   #ommig_fifth_section_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-columns: repeat(minmax(2, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -508,8 +508,8 @@ Til sidst media-query til desktopversionen.
 
   #ommig_seventh_section_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-columns: repeat(minmax(2, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -823,7 +823,7 @@ ________________________________________________________________________________
     background-color: #6c6867;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -1003,7 +1003,7 @@ ________________________________________________________________________________
   #ommig_fifth_section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -1189,7 +1189,7 @@ ________________________________________________________________________________
   #ommig_seventh_section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(4, 1fr));
+    grid-template-rows: repeat(minmax(4, 1fr));
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;

@@ -177,6 +177,13 @@ iframe {
   height: auto;
   aspect-ratio: 16 / 9;
   border-radius: 1.5%;
+  padding: 0.5em;
+  transition: 0.3s ease;
+  border: 4px solid var(--clr-baggrund-moerk);
+}
+
+iframe:hover {
+  border: 2px solid snow;
 }
 
 /* Nedenstående bruges til at lave gradients mellem sections på siden */
