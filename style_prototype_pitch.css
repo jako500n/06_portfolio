@@ -1,0 +1,224 @@
+/* Forneden ses media-queries, som er med til at gøre siden responsiv */
+@media only screen and (max-width: 600px) {
+  .prototype_wrapper {
+    flex-direction: column;
+  }
+
+  .p_overskrift {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .prototype_wrapper {
+    flex-direction: row;
+  }
+
+  .prototype_wrapper > * {
+    flex-basis: 100%;
+  }
+
+  .prototype_wrapper > * + * {
+    margin-left: 2em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+/* Forneden ses opsætning for overskrifter og paragraffer */
+body {
+  line-height: 1.5;
+}
+
+p {
+  font-family: var(--ff-tekst);
+  color: var(--clr-baggrund-moerk);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.p_overskrift {
+  font-family: var(--ff-overskrift);
+  color: var(--clr-primaer);
+}
+
+h1 {
+  font-family: var(--ff-h1);
+  line-height: 1.1;
+  color: var(--clr-primaer);
+  margin-bottom: 0.3em;
+}
+
+h2,
+h3 {
+  font-family: var(--ff-overskrift);
+  margin-bottom: 1em;
+  color: var(--clr-primaer);
+}
+
+.billede {
+  border-radius: 2%;
+  box-shadow: 0 12px 28px 0;
+}
+
+/* Her ses opsætning for at gøre sidens layout lige og pænt */
+.prototype_container {
+  margin-inline: auto;
+  width: 90%;
+  max-width: 1500px;
+}
+
+.prototype_wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.centreret {
+  text-align: center;
+}
+
+.hvid_boks {
+  background: var(--clr-primaer);
+  padding: 1em;
+  border-radius: 2%;
+  box-shadow: 0 12px 28px 0;
+}
+
+/* Nedenstående bruges til at sætte baggrundsfarve og mellemrum mellem sections */
+#prototype_first_section {
+  background-color: var(--clr-baggrund-mellemmoerk);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#prototype_third_section {
+  background-color: var(--clr-baggrund-moerk);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#prototype_fifth_section {
+  background-color: var(--clr-baggrund-lys);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#prototype_seventh_section {
+  background-color: var(--clr-baggrund-mellemlys);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#prototype_seventh_section_img {
+  background-color: var(--clr-baggrund-mellemlys);
+  padding-bottom: 1.5rem;
+}
+
+#prototype_ninth_section {
+  background-color: var(--clr-baggrund-lys);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#prototype_eleventh_section {
+  background-color: var(--clr-baggrund-mellemmoerk);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Nedenstående bruges til at lave gradients mellem sections på siden */
+#prototype_second_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-mellemmoerk),
+    var(--clr-baggrund-moerk)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+#prototype_fourth_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-moerk),
+    var(--clr-baggrund-lys)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+#prototype_sixth_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-lys),
+    var(--clr-baggrund-mellemlys)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+#prototype_eighth_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-mellemlys),
+    var(--clr-baggrund-lys)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+#prototype_tenth_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-lys),
+    var(--clr-baggrund-mellemmoerk)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+#prototype_twelfth_section_wrapper {
+  background-image: linear-gradient(
+    var(--clr-baggrund-mellemmoerk),
+    var(--clr-baggrund-moerk)
+  );
+  width: 100%;
+  height: 10vh;
+}
+
+/* Nedenstående er blot for at få "Til toppen"-knappen at positionere sig i midten */
+#prototype_twelfth_section_wrapper {
+  display: flex;
+}
+
+#prototype_twelfth_section_wrapper a {
+  font-family: var(--ff-tekst);
+  font-size: 3em;
+  text-decoration: none;
+  color: var(--clr-baggrund-moerk);
+  transition: 0.3s ease;
+}
+
+#prototype_twelfth_section_wrapper a:hover {
+  color: snow;
+}

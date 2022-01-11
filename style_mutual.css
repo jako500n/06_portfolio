@@ -1,0 +1,282 @@
+/* Forneden ses custom-classes, hvor farver og fonttyper er sat. Dette mindsker kodningen */
+/* Bliver primært brugt til projektsidens undersider */
+:root {
+  --clr-primaer: snow;
+  --clr-sekundaer: #24201d;
+
+  --clr-baggrund-lys: #969291;
+  --clr-baggrund-mellemlys: #6c6867;
+  --clr-baggrund-mellemmoerk: #5c5857;
+  --clr-baggrund-moerk: #24201d;
+
+  --ff-h1: "Cinzel", sans-serif;
+  --ff-overskrift: "Merriweather", sans-serif;
+  --ff-tekst: "Abel", sans-serif;
+}
+
+* {
+  margin: auto;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2em;
+}
+
+body {
+  background-color: var(--clr-baggrund-mellemlys);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* _____________________________________MENU % BURGER-MENU_______________________________*/
+header nav ul {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.8em;
+  box-shadow: 0 5px 10px 0;
+  background-color: #6c6867;
+  z-index: +1;
+  border-radius: 5%;
+}
+
+.banner {
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-baggrund-mellemlys);
+
+  box-shadow: 0 5px 10px 0;
+
+  z-index: +1;
+}
+
+.banner a {
+  font-family: "Abel", sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: snow;
+  transition: 0.3s ease;
+}
+
+.banner a:hover {
+  color: var(--clr-sekundaer);
+}
+
+.banner_mobile {
+  background-color: #6c6867;
+}
+
+.toggle-btn {
+  display: none;
+  list-style-type: none;
+  font-family: "Abel", sans-serif;
+  padding: 5px;
+  padding-bottom: 1.5rem;
+  padding-top: 1.8rem;
+  font-size: 1.5em;
+  color: var(--clr-primaer);
+}
+
+@media (max-width: 600px) {
+  header a {
+    font-size: 2em;
+  }
+
+  ._overskrift a {
+    font-size: 0.8em;
+  }
+
+  .toggle-btn {
+    background-color: var(--clr-baggrund-mellemlys);
+    border: none;
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
+  }
+
+  .banner {
+    display: flex;
+    flex-flow: column;
+    border-radius: 5%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.p_overskrift a {
+  font-family: var(--ff-overskrift);
+  color: var(--clr-primaer);
+  text-decoration: underline;
+  font-size: 1.5em;
+  transition: 0.3s ease;
+}
+
+.p_overskrift a:hover {
+  color: var(--clr-sekundaer);
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 2%;
+}
+
+/* Nedenstående er til footer, som går gennem alle siderne */
+hr {
+  width: 50%;
+  max-width: 70%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  opacity: 0.2;
+  color: var(--clr-baggrund-mellemmoerk);
+}
+
+footer h4 {
+  font-family: var(--ff-overskrift);
+  color: var(--clr-primaer);
+  font-size: 1em;
+}
+
+#footer h5 {
+  font-family: var(--ff-tekst);
+  color: var(--clr-baggrund-mellemmoerk);
+  font-size: 1em;
+}
+
+.footer_profil_01 {
+  font-family: var(--ff-tekst);
+  color: var(--clr-baggrund-lys);
+  font-size: 1em;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+}
+
+footer {
+  max-height: 100vh;
+  line-height: 1.5;
+  background: var(--clr-baggrund-moerk);
+}
+
+#footer_billede {
+  position: relative;
+}
+
+#footer_img {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid snow;
+  transition: 0.3s ease;
+}
+
+#footer_billede_overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+
+  display: flex;
+}
+
+.hvid_boks_02 {
+  background: var(--clr-primaer);
+  border-radius: 10%;
+  padding: 0.5em;
+}
+
+#footer_billede_overlay a {
+  text-decoration: none;
+  font-family: var(--ff-tekst);
+  color: var(--clr-baggrund-moerk);
+}
+
+#footer_billede_overlay:hover {
+  opacity: 1;
+}
+
+#footer_billede_overlay > * {
+  transform: translateY(0.5em);
+  transition: 0.3s ease;
+}
+
+#footer_billede_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.footer_profil {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.sociale_medier {
+  display: flex;
+  list-style: none;
+  padding: 0.5em;
+}
+
+.sociale_medier_link {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+
+.sociale_medier_link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  #footer_img {
+    width: 40%;
+  }
+
+  .footer_profil {
+    width: 100%;
+  }
+
+  .sociale_medier_link img {
+    width: 40px;
+  }
+}
+
+@media (min-width: 750px) {
+  .footer_profil {
+    flex-direction: row;
+  }
+
+  #footer_img {
+    width: 70%;
+  }
+
+  .sociale_medier {
+    width: 100%;
+  }
+
+  .sociale_medier_link img {
+    width: 40px;
+  }
+}
