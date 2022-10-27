@@ -15,12 +15,6 @@ function sidenVises() {
   // Når der trykkes på venstre, slides der til venstre //
   sidsteKnap_02.addEventListener("click", sidsteBillede_02);
 
-  // Når der trykkes på højre, slides der til højre //
-  naesteKnap_03.addEventListener("click", naesteBillede_03);
-
-  // Når der trykkes på venstre, slides der til venstre //
-  sidsteKnap_03.addEventListener("click", sidsteBillede_03);
-
   /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
   btn.addEventListener("click", toggleMenu);
 }
@@ -153,6 +147,16 @@ indikatorNav_01.addEventListener("click", (e) => {
 //___________________________________________________________________________________
 //___________________________________________________________________________________
 //___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+//___________________________________________________________________________________
 
 // Først vil alle variabler nedskrives i form af const (gør det nemmere at arbejde med) //
 
@@ -270,135 +274,6 @@ indikatorNav_02.addEventListener("click", (e) => {
   flytTilSlide_02(track_02, nuvaerendeSlide_02, trykSlide_02);
 
   opdaterKnap_02(nuvaerendeKnap_02, trykKnap_02);
-});
-
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-//___________________________________________________________________________________
-
-// Først vil alle variabler nedskrives i form af const (gør det nemmere at arbejde med) //
-
-const track_03 = document.querySelector(".carousel_track_03");
-const slides_03 = Array.from(track_03.children);
-const naesteKnap_03 = document.querySelector(".carousel_knap_hoejre_03");
-const sidsteKnap_03 = document.querySelector(".carousel_knap_venstre_03");
-const indikatorNav_03 = document.querySelector(".carousel_nav_03");
-const indikator_03 = Array.from(indikatorNav_03.children);
-
-const slideWidth_03 = slides_03[0].getBoundingClientRect().width;
-console.log(slideWidth_03);
-
-// Arrangér slides, sådan så de står ved siden af hinanden //
-slides_03[0].style.left = slideWidth_03 * 0 + "px";
-slides_03[1].style.left = slideWidth_03 * 1 + "px";
-slides_03[2].style.left = slideWidth_03 * 2 + "px";
-// Hvis man vil gøre dette på en automatisk metode, sådan så man kan tilføje eller
-// fjerne billeder som det lystrer, uden at man skal redigere i JavaScript manuelt,
-// kan man bruge følgende; slides.forEach((slide, index)=> {slide.style.left = slideWidth * index + "px";});
-
-const flytTilSlide_03 = (track_03, nuvaerendeSlide_03, trykSlide_03) => {
-  track_03.style.transform = "translateX(-" + trykSlide_03.style.left + ")";
-  nuvaerendeSlide_03.classList.remove("nuvaerende_slide_03");
-  trykSlide_03.classList.add("nuvaerende_slide_03");
-};
-
-const opdaterKnap_03 = (nuvaerendeKnap_03, trykKnap_03) => {
-  // Her fjernes den nuværende class på knappen og giver den videre til den, vi har trykket på //
-  nuvaerendeKnap_03.classList.remove("nuvaerende_slide_03");
-  trykKnap_03.classList.add("nuvaerende_slide_03");
-};
-
-function naesteBillede_03() {
-  console.log("naesteBillede_03");
-
-  // Her laver vi en const, der leder efter det nuværende slide i selve
-  // listepunktet carousel_slide, hvor alle billeder er //
-  const nuvaerendeSlide_03 = track_03.querySelector(".nuvaerende_slide_03");
-  // Her laver vi en const, der går ind og finder næste "sibling", altså det næste billede i rækkefølgen.
-  const naesteSlide_03 = nuvaerendeSlide_03.nextElementSibling;
-
-  // Her gør vi, at når vi klikker på næste billede til højre, vil knappernes næste søskende følge med,
-  // og på denne måde påvirkes de af opdaterKnap, som fjerner og giver class nuvaerende_slide //
-  const nuvaerendeKnap_03 = indikatorNav_03.querySelector(
-    ".nuvaerende_slide_03"
-  );
-  const naesteKnap_03 = nuvaerendeKnap_03.nextElementSibling;
-
-  // Nu skal vi gøre, så vi rykker til næste slide //
-
-  flytTilSlide_03(track_03, nuvaerendeSlide_03, naesteSlide_03);
-  // Hver gang vi klikker, ændrer nuvaerendeSlide sig. Værdien evalueres og puttes ind
-  // i funktionen. Derefter evalueres naesteSlide og sættes i funktionen.
-  // HVAD END der er i naesteSlide sættes i og filtreres gennem TrykSlide.
-
-  opdaterKnap_03(nuvaerendeKnap_03, naesteKnap_03);
-}
-
-function sidsteBillede_03() {
-  console.log("sidsteBillede_03");
-
-  // Her laver vi en const, der leder efter det nuværende slide i selve
-  // listepunktet carousel_slide, hvor alle billeder er //
-  const nuvaerendeSlide_03 = track_03.querySelector(".nuvaerende_slide_03");
-  // Her laver vi en const, der går ind og finder sidste "sibling", altså det sidste billede i rækkefølgen.
-  const sidsteSlide_03 = nuvaerendeSlide_03.previousElementSibling;
-
-  // Her gør vi, at når vi klikker på næste billede til venstre, vil knappernes sidste søskende følge med,
-  // og på denne måde påvirkes de af opdaterKnap, som fjerner og giver class nuvaerende_slide //
-  const nuvaerendeKnap_03 = indikatorNav_03.querySelector(
-    ".nuvaerende_slide_03"
-  );
-  const sidsteKnap_03 = nuvaerendeKnap_03.previousElementSibling;
-
-  // Nu skal vi gøre, så vi rykker til sidste slide //
-
-  flytTilSlide_03(track_03, nuvaerendeSlide_03, sidsteSlide_03);
-  // Hver gang vi klikker, ændrer nuvaerendeSlide sig. Værdien evalueres og puttes ind
-  // i funktionen. Derefter evalueres sidsteSlide og sættes i funktionen.
-  // HVAD END der er i sidsteSlide sættes i og filtreres gennem TrykSlide.
-
-  opdaterKnap_03(nuvaerendeKnap_03, sidsteKnap_03);
-}
-
-// Når der trykkes på nav-indikatoreren, slides der til denne //
-indikatorNav_03.addEventListener("click", (e) => {
-  // Her finder vi ud af, hvilken indikator der er trykket på //
-  const trykKnap_03 = e.target.closest("button");
-
-  // Hvis vi klikker på noget, som ikke er vores indikatorknap, så stopper funktionen //
-  // Hvis vi klikker på noget, som er en del af indikatorknappen, så forbliver funktionen //
-  if (!trykKnap_03) return;
-
-  // Vi vil gerne vide, hvilket slide vi er på, og hvilken indikatorknap vi er på //
-  const nuvaerendeSlide_03 = track_03.querySelector(".nuvaerende_slide_03");
-  const nuvaerendeKnap_03 = indikatorNav_03.querySelector(
-    ".nuvaerende_slide_03"
-  );
-
-  // findIndex tjekker arrayet og returnerer index-nummeret ved det første rigtige //
-  const trykIndex_03 = indikator_03.findIndex(
-    (indikator_03) => indikator_03 === trykKnap_03
-  );
-
-  // Vi kan bruge konsolloggen og tjekke, at når der eksempelvis klikkes på den midterste knap,
-  // så vises index-nummeret 1. Det gør den, da array starter med at tælle fra 0 //
-  console.log(trykIndex_03);
-
-  // trykSlide lader os finde ud af trykSlide og fokusere på denne //
-  const trykSlide_03 = slides_03[trykIndex_03];
-
-  // Nu bruger vi trykSlide, som fokuserer på et index-nummer fra array til at fortælle
-  // flytTilSlide, at vi netop skal slide til dette nummer i arrayet. //
-  flytTilSlide_03(track_03, nuvaerendeSlide_03, trykSlide_03);
-
-  opdaterKnap_03(nuvaerendeKnap_03, trykKnap_03);
 });
 
 //___________________________________________________________________________________

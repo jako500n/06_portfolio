@@ -29,23 +29,16 @@ Til sidst media-query til desktopversionen.
     aspect-ratio: 4 / 5;
     width: 100%;
     max-height: 100%;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
 
   h1 {
-    background-image: linear-gradient(45deg, snow, #6c6867);
-    background-clip: text;
-    background-size: 300%;
-    color: transparent;
-
+    color: snow;
     font-family: "Cinzel", sans-serif;
     font-size: 2rem;
     grid-column: 1 / 5;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   #ommig_first_section_wrapper_img_01 {
@@ -58,7 +51,6 @@ Til sidst media-query til desktopversionen.
     color: snow;
     line-height: 1.15;
     text-align: center;
-
     font-family: "Abel", sans-serif;
     font-size: 3em;
   }
@@ -109,23 +101,15 @@ Til sidst media-query til desktopversionen.
     background-image: linear-gradient(#24201d 10%, #6c6867);
     width: 100%;
     height: 10vh;
-
     display: flex;
   }
 
   #ommig_second_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 10%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
+    color: snow;
     margin-top: 2vh;
-
     justify-content: center;
-
-    color: transparent;
     font-family: "Abel", sans-serif;
     font-size: 3em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________mobile_media_third_section________________________________*/
@@ -136,23 +120,10 @@ Til sidst media-query til desktopversionen.
 
   #ommig_third_section_wrapper {
     display: grid;
-    grid-template-columns: repeat(minmax(2, 1fr));
-    grid-template-rows: repeat(minmax(4, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-  }
-
-  #ommig_third_section_wrapper_img_01 {
-    background-image: url(images/tempel.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 1;
   }
 
   #ommig_third_section_wrapper_txt_01 {
@@ -160,23 +131,18 @@ Til sidst media-query til desktopversionen.
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 2;
+    grid-column: 1 / 3;
     grid-row: 1;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
-  #ommig_third_section_wrapper_img_02 {
+  #ommig_third_section_wrapper_img_01 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 95%;
     border-radius: 2%;
-
     grid-column: 1 / 3;
     grid-row: 2;
   }
@@ -200,7 +166,6 @@ Til sidst media-query til desktopversionen.
     list-style: none;
     position: relative;
     height: 100%;
-
     transition: transform 300ms ease-in;
   }
 
@@ -236,7 +201,6 @@ Til sidst media-query til desktopversionen.
     height: 10px;
     background: rgba(255, 250, 250, 0.4);
     margin: 0 12px;
-
     cursor: pointer;
   }
 
@@ -249,26 +213,11 @@ Til sidst media-query til desktopversionen.
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
     grid-column: 1 / 3;
     grid-row: 3;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
-  }
-
-  #ommig_third_section_wrapper_img_03 {
-    background-image: url(images/kon2.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 2;
-    grid-row: 4;
   }
 
   #ommig_third_section_wrapper_txt_03 {
@@ -276,69 +225,45 @@ Til sidst media-query til desktopversionen.
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 1;
+    grid-column: 1 / 3;
     grid-row: 4;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
   /*___________________________________mobile_media_fourth_section________________________________*/
   #ommig_fourth_section {
-    background: #6c6867;
+    background: #24201d;
     padding-top: 10vh;
   }
 
   #ommig_fourth_section_wrapper {
-    background-image: linear-gradient(#6c6867 10%, #24201d);
+    background-image: linear-gradient(#24201d 10%, #5c5857);
     width: 100%;
     height: 10vh;
-
     display: flex;
   }
 
   #ommig_fourth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 50%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
-
+    color: snow;
     justify-content: center;
-
-    color: transparent;
     font-family: "Abel", sans-serif;
     font-size: 4em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________mobile_media_fifth_section________________________________*/
   #ommig_fifth_section {
     padding-top: 3vh;
-    background: #24201d;
+    background: #5c5857;
   }
 
   #ommig_fifth_section_wrapper {
     display: grid;
-    grid-template-columns: repeat(minmax(2, 1fr));
-    grid-template-rows: repeat(minmax(4, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-  }
-
-  #ommig_fifth_section_wrapper_img_01 {
-    background-image: url(images/tao.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 1;
   }
 
   #ommig_fifth_section_wrapper_txt_01 {
@@ -346,23 +271,18 @@ Til sidst media-query til desktopversionen.
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 2;
+    grid-column: 1 / 3;
     grid-row: 1;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
-  #ommig_fifth_section_wrapper_img_02 {
+  #ommig_fifth_section_wrapper_img_01 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 95%;
     border-radius: 2%;
-
     grid-column: 1 / 3;
     grid-row: 2;
   }
@@ -386,7 +306,6 @@ Til sidst media-query til desktopversionen.
     list-style: none;
     position: relative;
     height: 100%;
-
     transition: transform 300ms ease-in;
   }
 
@@ -422,7 +341,6 @@ Til sidst media-query til desktopversionen.
     height: 10px;
     background: rgba(255, 250, 250, 0.4);
     margin: 0 12px;
-
     cursor: pointer;
   }
 
@@ -435,240 +353,25 @@ Til sidst media-query til desktopversionen.
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
     grid-column: 1 / 3;
-    grid-row: 3;
+    grid-row: 4;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
-
-  #ommig_fifth_section_wrapper_img_03 {
-    background-image: url(images/under.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  #ommig_fifth_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 1;
-    grid-row: 4;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
   /*___________________________________mobile_media_sixth_section________________________________*/
-  #ommig_sixth_section {
-    background: #24201d;
-    padding-top: 10vh;
-  }
-
   #ommig_sixth_section_wrapper {
-    background-image: linear-gradient(#24201d 10%, #5c5857);
-    width: 100%;
-    height: 10vh;
-
-    display: flex;
-  }
-
-  #ommig_sixth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 60%, #5c5857);
-    background-clip: text;
-    background-size: 200%;
-
-    justify-content: center;
-
-    color: transparent;
-    font-family: "Abel", sans-serif;
-    font-size: 4em;
-
-    animation: text_animation_01 5s infinite alternate;
-  }
-
-  /*___________________________________mobile_media_seventh_section________________________________*/
-  #ommig_seventh_section {
-    padding-top: 3vh;
-    background: #5c5857;
-  }
-
-  #ommig_seventh_section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(minmax(2, 1fr));
-    grid-template-rows: repeat(minmax(4, 1fr));
-    gap: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  #ommig_seventh_section_wrapper_img_01 {
-    background-image: url(images/far.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  #ommig_seventh_section_wrapper_txt_01 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 2;
-    grid-row: 1;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  #ommig_seventh_section_wrapper_img_02 {
-    aspect-ratio: 4 / 5;
-    position: relative;
-    width: 95%;
-    border-radius: 2%;
-
-    grid-column: 1 / 3;
-    grid-row: 2;
-  }
-
-  .carousel_billeder_03 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2%;
-  }
-
-  .carousel_track_container_03 {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .carousel_track_03 {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-
-    transition: transform 300ms ease-in;
-  }
-
-  .carousel_slide_03 {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    width: 100%;
-  }
-
-  .carousel_knap_03 {
-    display: none;
-  }
-
-  .carousel_knap_venstre_03 {
-    left: -25px;
-  }
-
-  .carousel_knap_hoejre_03 {
-    right: -25px;
-  }
-
-  .carousel_nav_03 {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-  }
-
-  .carousel_indikator_03 {
-    border: 0;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 250, 250, 0.4);
-    margin: 0 12px;
-
-    cursor: pointer;
-  }
-
-  .carousel_indikator_03.nuvaerende_slide_03 {
-    background: rgba(255, 250, 250, 0.8);
-  }
-  #ommig_seventh_section_wrapper_txt_02 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 1 / 3;
-    grid-row: 3;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  #ommig_seventh_section_wrapper_img_03 {
-    background-image: url(images/baba.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  #ommig_seventh_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 1;
-    grid-row: 4;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  /*___________________________________mobile_media_eight_section________________________________*/
-  #ommig_eighth_section_wrapper {
     background-image: linear-gradient(#5c5857, #24201d);
     width: 100%;
     height: 15vh;
   }
 
   /* Nedenstående er blot for at få "Til toppen"-knappen at positionere sig i midten */
-  #ommig_eighth_section_wrapper {
+  #ommig_sixth_section_wrapper {
     display: flex;
   }
 
-  #ommig_eighth_section_wrapper a {
+  #ommig_sixth_section_wrapper a {
     font-family: var(--ff-tekst);
     font-size: 2em;
     text-decoration: none;
@@ -676,7 +379,7 @@ Til sidst media-query til desktopversionen.
     transition: 0.3s ease;
   }
 
-  #ommig_eighth_section_wrapper a:hover {
+  #ommig_sixth_section_wrapper a:hover {
     color: snow;
   }
 }
@@ -695,19 +398,12 @@ ________________________________________________________________________________
   }
 
   h1 {
-    background-image: linear-gradient(45deg, snow, #6c6867);
-    background-clip: text;
-    background-size: 300%;
-    color: transparent;
-
+    color: snow;
     font-family: "Cinzel", sans-serif;
     font-size: 3rem;
     margin-top: 3vw;
-
     grid-column: 1 / 6;
     grid-row: 1;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   #omgmig_first_section_wrapper {
@@ -716,7 +412,6 @@ ________________________________________________________________________________
     aspect-ratio: 16 / 9;
     width: 100%;
     max-height: 100vh;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -727,9 +422,7 @@ ________________________________________________________________________________
     background-size: cover;
     aspect-ratio: 4 / 5;
     width: 100%;
-    height: auto;
     box-shadow: 0 25px 28px 0;
-
     grid-column: 1;
     grid-row: 2;
     margin-left: 5vw;
@@ -740,7 +433,6 @@ ________________________________________________________________________________
     line-height: 1.15;
     text-align: center;
     margin-top: 10vw;
-
     font-family: "Abel", sans-serif;
     font-size: 1.5em;
   }
@@ -749,7 +441,6 @@ ________________________________________________________________________________
     color: snow;
     line-height: 1.15;
     text-align: center;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
@@ -785,7 +476,6 @@ ________________________________________________________________________________
     aspect-ratio: 4 / 5;
     width: 70%;
     box-shadow: 0 50px 28px 0;
-
     grid-column: 3;
     grid-row: 2;
     margin-left: -2vw;
@@ -796,21 +486,14 @@ ________________________________________________________________________________
     background-image: linear-gradient(#24201d 10%, #6c6867);
     width: 100%;
     height: 20vh;
-
     display: flex;
   }
 
   #ommig_second_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 20%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
-
+    color: snow;
     justify-content: center;
-    color: transparent;
     font-family: "Abel", sans-serif;
     font-size: 3em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________tablet_media_third_section________________________________*/
@@ -823,22 +506,10 @@ ________________________________________________________________________________
     background-color: #6c6867;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(minmax(4, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-  }
-
-  #ommig_third_section_wrapper_img_01 {
-    background-image: url(images/tempel.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 1;
   }
 
   #ommig_third_section_wrapper_txt_01 {
@@ -846,25 +517,20 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 2;
-    grid-row: 1;
-
+    grid-column: 1;
+    grid-row: 1 / 3;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
-  #ommig_third_section_wrapper_img_02 {
+  #ommig_third_section_wrapper_img_01 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 100%;
     border-radius: 2%;
-
-    grid-column: 2 / 3;
-    grid-row: 2;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .carousel_billeder_01 {
@@ -935,26 +601,11 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
-  }
-
-  #ommig_third_section_wrapper_img_03 {
-    background-image: url(images/kon2.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 3;
-    grid-row: 1;
   }
 
   #ommig_third_section_wrapper_txt_03 {
@@ -962,63 +613,46 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 1 / 3;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
   /*___________________________________tablet_media_fourth_section____________________________________*/
-  #ommig_fourth_section_wrapper {
-    background-image: linear-gradient(#6c6867 10%, #24201d);
-    width: 100%;
-    height: 20vh;
+  #ommig_fourth_section {
+    background: #24201d;
+    padding-top: 10vh;
+  }
 
+  #ommig_fourth_section_wrapper {
+    background-image: linear-gradient(#24201d 10%, #5c5857);
+    width: 100%;
+    height: 10vh;
     display: flex;
   }
 
   #ommig_fourth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 20%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
+    color: snow;
     justify-content: center;
-    color: transparent;
-
     font-family: "Abel", sans-serif;
     font-size: 3em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________tablet_media_fifth_section________________________________*/
   #ommig_fifth_section {
     padding-top: 3vh;
-    background: #24201d;
+    background: #5c5857;
   }
 
   #ommig_fifth_section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(minmax(4, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     gap: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-  }
-
-  #ommig_fifth_section_wrapper_img_01 {
-    background-image: url(images/tao.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 2;
   }
 
   #ommig_fifth_section_wrapper_txt_01 {
@@ -1026,25 +660,20 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 2;
-    grid-row: 2;
-
+    grid-column: 1;
+    grid-row: 1 / 3;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
-  #ommig_fifth_section_wrapper_img_02 {
+  #ommig_fifth_section_wrapper_img_01 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 100%;
     border-radius: 2%;
-
-    grid-column: 2 / 3;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 1 / 3;
   }
 
   .carousel_billeder_02 {
@@ -1115,242 +744,26 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 100%;
-    height: auto;
-
-    grid-column: 1;
-    grid-row: 1;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  #ommig_fifth_section_wrapper_img_03 {
-    background-image: url(images/under.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
     grid-column: 3;
-    grid-row: 2;
-  }
-
-  #ommig_fifth_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 3;
-    grid-row: 1;
+    grid-row: 1 / 3;
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
 
   /*___________________________________tablet_media_sixth_section________________________________*/
-  #ommig_sixth_section {
-    background: #24201d;
-    padding-top: 10vh;
-  }
-
   #ommig_sixth_section_wrapper {
-    background-image: linear-gradient(#24201d 10%, #5c5857);
-    width: 100%;
-    height: 10vh;
-
-    display: flex;
-  }
-
-  #ommig_sixth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 60%, #5c5857);
-    background-clip: text;
-    background-size: 200%;
-
-    justify-content: center;
-
-    color: transparent;
-    font-family: "Abel", sans-serif;
-    font-size: 3em;
-
-    animation: text_animation_01 5s infinite alternate;
-  }
-
-  /*___________________________________tablet_media_seventh_section________________________________*/
-  #ommig_seventh_section {
-    padding-top: 3vh;
-    background: #5c5857;
-  }
-
-  #ommig_seventh_section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(minmax(4, 1fr));
-    gap: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  #ommig_seventh_section_wrapper_img_01 {
-    background-image: url(images/far.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  #ommig_seventh_section_wrapper_txt_01 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 2;
-    grid-row: 1;
-
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  #ommig_seventh_section_wrapper_img_02 {
-    aspect-ratio: 4 / 5;
-    position: relative;
-    width: 100%;
-    border-radius: 2%;
-
-    grid-column: 2 / 3;
-    grid-row: 2;
-  }
-
-  .carousel_billeder_03 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2%;
-  }
-
-  .carousel_track_container_03 {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .carousel_track_03 {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-
-    transition: transform 300ms ease-in;
-  }
-
-  .carousel_slide_03 {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    width: 100%;
-  }
-
-  .carousel_knap_03 {
-    display: none;
-  }
-
-  .carousel_knap_venstre_03 {
-    left: -25px;
-  }
-
-  .carousel_knap_hoejre_03 {
-    right: -25px;
-  }
-
-  .carousel_nav_03 {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-  }
-
-  .carousel_indikator_03 {
-    border: 0;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 250, 250, 0.4);
-    margin: 0 12px;
-
-    cursor: pointer;
-  }
-
-  .carousel_indikator_03.nuvaerende_slide_03 {
-    background: rgba(255, 250, 250, 0.8);
-  }
-
-  #ommig_seventh_section_wrapper_txt_02 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 1;
-    grid-row: 2;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  #ommig_seventh_section_wrapper_img_03 {
-    background-image: url(images/baba.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 100%;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  #ommig_seventh_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-
-    grid-column: 3;
-    grid-row: 2;
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1em;
-  }
-
-  /*___________________________________tablet_media_eight_section________________________________*/
-  #ommig_eighth_section_wrapper {
     background-image: linear-gradient(#5c5857, #24201d);
     width: 100%;
     height: 15vh;
   }
 
   /* Nedenstående er blot for at få "Til toppen"-knappen at positionere sig i midten */
-  #ommig_eighth_section_wrapper {
+  #ommig_sixth_section_wrapper {
     display: flex;
   }
 
-  #ommig_eighth_section_wrapper a {
+  #ommig_sixth_section_wrapper a {
     font-family: var(--ff-tekst);
     font-size: 2.5em;
     text-decoration: none;
@@ -1358,7 +771,7 @@ ________________________________________________________________________________
     transition: 0.3s ease;
   }
 
-  #ommig_eighth_section_wrapper a:hover {
+  #ommig_sixth_section_wrapper a:hover {
     color: snow;
   }
 }
@@ -1382,24 +795,17 @@ ________________________________________________________________________________
     aspect-ratio: 16 / 9;
     width: 100%;
     max-height: 100vh;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 
   h1 {
-    background-image: linear-gradient(45deg, snow, #6c6867);
-    background-clip: text;
-    background-size: 300%;
-    color: transparent;
-
+    color: snow;
     font-family: "Cinzel", sans-serif;
     font-size: 3rem;
     grid-column: 1 / 6;
     margin-top: 3vw;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   #ommig_first_section_wrapper_img_01 {
@@ -1407,9 +813,7 @@ ________________________________________________________________________________
     background-size: cover;
     aspect-ratio: 4 / 5;
     width: 150%;
-    height: auto;
     box-shadow: 0 50px 28px 0;
-
     grid-column: 1 / 2;
     grid-row: 2;
     margin-left: 5vw;
@@ -1420,7 +824,6 @@ ________________________________________________________________________________
     line-height: 1.15;
     text-align: center;
     margin-top: 10vw;
-
     font-family: "Abel", sans-serif;
     font-size: 1.5em;
   }
@@ -1429,7 +832,6 @@ ________________________________________________________________________________
     color: snow;
     line-height: 1.15;
     text-align: center;
-
     font-family: "Abel", sans-serif;
     font-size: 1em;
   }
@@ -1441,7 +843,6 @@ ________________________________________________________________________________
     margin-left: 1vw;
     margin-right: 1vw;
     margin-top: 5vw;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
   }
@@ -1473,7 +874,6 @@ ________________________________________________________________________________
     aspect-ratio: 4 / 5;
     width: 100%;
     box-shadow: 0 50px 28px 0;
-
     grid-column: 4 / 5;
     grid-row: 2;
     margin-left: 10vw;
@@ -1483,21 +883,14 @@ ________________________________________________________________________________
     background-image: linear-gradient(#24201d 10%, #6c6867);
     width: 100%;
     height: 25vh;
-
     display: flex;
   }
 
   #ommig_second_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 20%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
-
+    color: snow;
     justify-content: center;
-    color: transparent;
     font-family: "Abel", sans-serif;
     font-size: 2.5em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________desktop_media_third_section____________________________________*/
@@ -1506,25 +899,14 @@ ________________________________________________________________________________
   }
 
   #ommig_third_section_wrapper {
-    background-image: url(images/botanisk.webp);
+    background-image: url(images/baggrund_om_mig_02.webp);
     background-size: cover;
     aspect-ratio: 16 / 9;
     width: 100%;
     height: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  #ommig_third_section_wrapper_img_01 {
-    background-image: url(images/tempel.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   #ommig_third_section_wrapper_txt_01 {
@@ -1532,22 +914,22 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 325px;
-    height: auto;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
+    grid-column: 1;
+    grid-row: 1 / 3;
   }
 
-  #ommig_third_section_wrapper_img_02 {
+  #ommig_third_section_wrapper_img_01 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 325px;
     border-radius: 2%;
     box-shadow: 0 12px 28px 0;
-
     margin-top: 1.7em;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .carousel_billeder_01 {
@@ -1569,7 +951,6 @@ ________________________________________________________________________________
     list-style: none;
     position: relative;
     height: 100%;
-
     transition: transform 250ms ease-in;
   }
 
@@ -1586,7 +967,6 @@ ________________________________________________________________________________
     transform: translateY(-50%);
     background: transparent;
     border: 0;
-
     cursor: pointer;
   }
 
@@ -1615,7 +995,6 @@ ________________________________________________________________________________
     height: 10px;
     background: rgba(255, 250, 250, 0.4);
     margin: 0 12px;
-
     cursor: pointer;
   }
 
@@ -1628,21 +1007,11 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 325px;
-    height: auto;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
-  }
-
-  #ommig_third_section_wrapper_img_03 {
-    background-image: url(images/kon2.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   #ommig_third_section_wrapper_txt_03 {
@@ -1650,72 +1019,50 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 325px;
-    height: auto;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
+    grid-column: 3;
+    grid-row: 1 / 3;
   }
 
   /*___________________________________desktop_media_fourth_section____________________________________*/
   #ommig_fourth_section_wrapper {
-    background-image: linear-gradient(#464241 40%, #5c5857);
+    background-image: linear-gradient(#2f2b2a 10%, #969291);
     width: 100%;
     height: 30vh;
-
     display: flex;
   }
 
   #ommig_fourth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 20%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
+    color: snow;
     justify-content: center;
-    color: transparent;
-
     margin-top: 2.5em;
-
     font-family: "Abel", sans-serif;
     font-size: 2.5em;
-
-    animation: text_animation_01 5s infinite alternate;
   }
 
   /*___________________________________desktop_media_fifth_section____________________________________*/
-  #ommig_fifth_section {
-    height: auto;
-  }
 
   #ommig_fifth_section_wrapper {
-    background-image: url(images/kam.webp);
+    background-image: url(images/baggrund_om_mig_03.webp);
     background-size: cover;
     aspect-ratio: 16 / 9;
     width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   #ommig_fifth_section_wrapper_img_01 {
-    background-image: url(images/tao.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-  }
-
-  #ommig_fifth_section_wrapper_img_02 {
     aspect-ratio: 4 / 5;
     position: relative;
     width: 325px;
     border-radius: 2%;
     box-shadow: 0 12px 28px 0;
-
     margin-top: 1.7em;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .carousel_billeder_02 {
@@ -1737,7 +1084,6 @@ ________________________________________________________________________________
     list-style: none;
     position: relative;
     height: 100%;
-
     transition: transform 300ms ease-in;
   }
 
@@ -1754,7 +1100,6 @@ ________________________________________________________________________________
     transform: translateY(-50%);
     background: transparent;
     border: 0;
-
     cursor: pointer;
   }
 
@@ -1783,7 +1128,6 @@ ________________________________________________________________________________
     height: 10px;
     background: rgba(255, 250, 250, 0.4);
     margin: 0 12px;
-
     cursor: pointer;
   }
 
@@ -1791,26 +1135,16 @@ ________________________________________________________________________________
     background: rgba(255, 250, 250, 0.8);
   }
 
-  #ommig_fifth_section_wrapper_img_03 {
-    background-image: url(images/under.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-  }
-
   #ommig_fifth_section_wrapper_txt_01 {
     background-color: snow;
     padding: 2vw;
     border-radius: 2%;
     width: 325px;
-    height: auto;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
+    grid-column: 1;
+    grid-row: 1 / 4;
   }
 
   #ommig_fifth_section_wrapper_txt_02 {
@@ -1818,221 +1152,26 @@ ________________________________________________________________________________
     padding: 2vw;
     border-radius: 2%;
     width: 325px;
-    height: auto;
-
     box-shadow: 0 12px 28px 0;
-
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
-  }
-
-  #ommig_fifth_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 325px;
-    height: auto;
-
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1.2em;
+    grid-column: 3;
+    grid-row: 1 / 4;
   }
 
   /*___________________________________desktop_media_sixth_section____________________________________*/
   #ommig_sixth_section_wrapper {
-    background-image: linear-gradient(#2f2b2a 10%, #969291);
-    width: 100%;
-    height: 30vh;
-
-    display: flex;
-  }
-
-  #ommig_sixth_section_wrapper_txt_01 {
-    background-image: linear-gradient(45deg, snow 20%, #6c6867);
-    background-clip: text;
-    background-size: 200%;
-    justify-content: center;
-    color: transparent;
-
-    margin-top: 2.5em;
-
-    font-family: "Abel", sans-serif;
-    font-size: 2.5em;
-
-    animation: text_animation_01 5s infinite alternate;
-  }
-
-  /*___________________________________desktop_media_seventh_section____________________________________*/
-  #ommig_seventh_section {
-    height: auto;
-  }
-
-  #ommig_seventh_section_wrapper {
-    background-image: url(images/bos.webp);
-    background-size: cover;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  #ommig_seventh_section_wrapper_img_01 {
-    background-image: url(images/far.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-  }
-
-  #ommig_seventh_section_wrapper_img_02 {
-    aspect-ratio: 4 / 5;
-    position: relative;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-
-    margin-top: 1.7em;
-  }
-
-  .carousel_billeder_03 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2%;
-  }
-
-  .carousel_track_container_03 {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .carousel_track_03 {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-
-    transition: transform 300ms ease-in;
-  }
-
-  .carousel_slide_03 {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    width: 100%;
-  }
-
-  .carousel_knap_03 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-
-    cursor: pointer;
-  }
-
-  .carousel_knap_03 img {
-    width: 20px;
-  }
-
-  .carousel_knap_venstre_03 {
-    left: -25px;
-  }
-
-  .carousel_knap_hoejre_03 {
-    right: -25px;
-  }
-
-  .carousel_nav_03 {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-  }
-
-  .carousel_indikator_03 {
-    border: 0;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 250, 250, 0.4);
-    margin: 0 12px;
-
-    cursor: pointer;
-  }
-
-  .carousel_indikator_03.nuvaerende_slide_03 {
-    background: rgba(255, 250, 250, 0.8);
-  }
-
-  #ommig_seventh_section_wrapper_img_03 {
-    background-image: url(images/baba.webp);
-    background-size: cover;
-    aspect-ratio: 4 / 5;
-    width: 325px;
-    border-radius: 2%;
-    box-shadow: 0 12px 28px 0;
-  }
-
-  #ommig_seventh_section_wrapper_txt_01 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 325px;
-    height: auto;
-
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1.2em;
-  }
-
-  #ommig_seventh_section_wrapper_txt_02 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 325px;
-    height: auto;
-
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1.2em;
-  }
-
-  #ommig_seventh_section_wrapper_txt_03 {
-    background-color: snow;
-    padding: 2vw;
-    border-radius: 2%;
-    width: 325px;
-    height: auto;
-
-    box-shadow: 0 12px 28px 0;
-
-    font-family: "Abel", sans-serif;
-    font-size: 1.2em;
-  }
-
-  /*___________________________________desktop_media_eight_section________________________________*/
-  #ommig_eighth_section_wrapper {
     background-image: linear-gradient(#5c5857, #24201d);
     width: 100%;
-    height: 45vh;
+    height: 20vh;
   }
 
   /* Nedenstående er blot for at få "Til toppen"-knappen at positionere sig i midten */
-  #ommig_eighth_section_wrapper {
+  #ommig_sixth_section_wrapper {
     display: flex;
   }
 
-  #ommig_eighth_section_wrapper a {
+  #ommig_sixth_section_wrapper a {
     font-family: var(--ff-tekst);
     font-size: 3em;
     text-decoration: none;
@@ -2040,7 +1179,7 @@ ________________________________________________________________________________
     transition: 0.3s ease;
   }
 
-  #ommig_eighth_section_wrapper a:hover {
+  #ommig_sixth_section_wrapper a:hover {
     color: snow;
   }
 }
